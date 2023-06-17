@@ -138,7 +138,7 @@ function createProduct() {
   tbody.appendChild(tr);
 
   inputProduct.value = "";
-  inputPrice.value = "";
+  inputPrice.value = "0";
 }
 
 window.addEventListener("load", () => {
@@ -153,7 +153,7 @@ window.addEventListener("load", () => {
   const createBtn = document.getElementById("create");
   createBtn.addEventListener("click", () => {
     createProduct();
-    lastBtn = removeBtns[removeBtns.length-1];
+    lastBtn = removeBtns[removeBtns.length - 1];
     lastBtn.addEventListener("click", removeProduct);
   });
 });
