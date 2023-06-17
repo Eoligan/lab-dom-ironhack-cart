@@ -65,6 +65,13 @@ table input[type='number'] {
   background: rgb(102, 161, 102);
 }
 
+
+.invalid:focus {
+  outline: 2px solid rgb(232, 37, 37);
+  border-radius: 2px;
+}
+
+
 h1,
 h2,
 .calculate-total {
